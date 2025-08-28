@@ -58,6 +58,12 @@ return require('packer').startup(function(use)
                 window = {
                     enter_insert = false,
                 },
+                keymaps = {
+                    toggle = {
+                        normal = "<C-_>",
+                        terminal = "<C-_>",
+                    },
+                },
             })
         end
     }
