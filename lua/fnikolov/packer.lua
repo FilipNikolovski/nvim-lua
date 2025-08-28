@@ -48,4 +48,18 @@ return require('packer').startup(function(use)
 	use('hrsh7th/cmp-path')
 	use('hrsh7th/cmp-cmdline')
 
+    use {
+        'greggh/claude-code.nvim',
+        requires = {
+            'nvim-lua/plenary.nvim', -- Required for git operations
+        },
+        config = function()
+            require('claude-code').setup({
+                window = {
+                    enter_insert = false,
+                },
+            })
+        end
+    }
+
 end)
