@@ -27,16 +27,17 @@ return require('packer').startup(function(use)
 		end,
 	}
 
-	use('theprimeagen/harpoon')
-	use('mbbill/undotree')
-	use('echasnovski/mini.nvim')
-	use {
-		'swaits/lazyjj.nvim',
-		requires = 'nvim-lua/plenary.nvim',
-		config = function()
-			require('lazyjj').setup()
-		end
-	}
+    use('theprimeagen/harpoon')
+    use('theprimeagen/vim-be-good')
+    use('mbbill/undotree')
+    use('echasnovski/mini.nvim')
+    use {
+        'swaits/lazyjj.nvim',
+        requires = 'nvim-lua/plenary.nvim',
+        config = function()
+            require('lazyjj').setup()
+        end
+    }
 
 	use('neovim/nvim-lspconfig') 
 	use('williamboman/mason.nvim')
